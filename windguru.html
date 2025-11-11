@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Windguru Embeds</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: system-ui, Segoe UI, Roboto, Arial;
+      padding: 12px;
+      background: #000000;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .widget-container {
+      width: 100%;
+      overflow: hidden;
+      margin: 20px 0;
+      background: #000000;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .scaled-content {
+      transform: scale(0.9);       /* Adjust scale as needed */
+      transform-origin: top left;
+      width: 125%;                  /* Compensate for scale */
+    }
+
+    /* Optional: separate widgets visually */
+    .scaled-content + .scaled-content {
+      margin-top: 40px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>Windguru Forecasts</h1>
+
+  <h2>Haifa</h2>
+  <div class="widget-container">
+    <div class="scaled-content">
+      <div id="widget-885332-1"></div>
+      <script id="wg_fwdg_885332_23_1762674989055">
+      (function (window, document) {
+        var loader = function () {
+          var arg = ["s=885332","m=23","uid=wg_fwdg_885332_23_1762674989055","ai=0","wj=knots","tj=c","waj=m","tij=cm","odh=0","doh=24","fhours=240","hrsm=1","vt=forecasts","lng=en","p=WINDSPD,GUST,MWINDSPD,SMER"];
+          var script = document.createElement("script");
+          var tag = document.getElementsByTagName("script")[0];
+          script.src = "https://www.windguru.cz/js/widget.php?" + arg.join("&");
+          tag.parentNode.insertBefore(script, tag);
+        };
+        window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+      })(window, document);
+      </script>
+    </div>
+  </div>
+
+  <a href="https://www.windguru.cz/station/15233">bezet</a>
+  <a href="https://www.windguru.cz/station/2256">atlit</a>
+
+  <h2>Beit yanai</h2>
+  <div class="widget-container">
+    <div class="scaled-content">
+      <div id="widget-895899"></div>
+      <script id="wg_fwdg_895899_23_1762675660178">
+      (function (window, document) {
+        var loader = function () {
+          var arg = ["s=895899","m=23","uid=wg_fwdg_895899_23_1762675660178","ai=0","wj=knots","tj=c","waj=m","tij=cm","odh=0","doh=24","fhours=240","hrsm=1","vt=forecasts","lng=en","p=WINDSPD,GUST,MWINDSPD,SMER"];
+          var script = document.createElement("script");
+          var tag = document.getElementsByTagName("script")[0];
+          script.src = "https://www.windguru.cz/js/widget.php?" + arg.join("&");
+          tag.parentNode.insertBefore(script, tag);
+        };
+        window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+      })(window, document);
+      </script>
+    </div>
+  </div>
+  <a href="https://www.windguru.cz/station/3377">hadera</a>
+
+
+  <h2>Tel Aviv</h2>
+  <div class="widget-container">
+    <div class="scaled-content">
+      <div id="widget-308"></div>
+      <script id="wg_fwdg_308_23_1762675342169">
+      (function (window, document) {
+        var loader = function () {
+          var arg = ["s=308","m=23","uid=wg_fwdg_308_23_1762675342169","wj=knots","tj=c","waj=m","tij=cm","odh=0","doh=24","fhours=240","hrsm=1","vt=forecasts","lng=en","p=WINDSPD,GUST,MWINDSPD,SMER"];
+          var script = document.createElement("script");
+          var tag = document.getElementsByTagName("script")[0];
+          script.src = "https://www.windguru.cz/js/widget.php?" + arg.join("&");
+          tag.parentNode.insertBefore(script, tag);
+        };
+        window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+      })(window, document);
+      </script>
+    </div>
+  </div>
+
+    <a href="https://www.windguru.cz/station/2032">herzliya</a>
+    <a href="https://www.windguru.cz/station/3169">tel aviv</a>
+
+  <h2>Eilat</h2>
+  <div class="widget-container">
+    <div class="scaled-content">
+      <div id="widget-308"></div>
+        <script id="wg_fwdg_435_23_1762767427929">
+        (function (window, document) {
+        var loader = function () {
+            var arg = ["s=435" ,"m=23","uid=wg_fwdg_435_23_1762767427929" ,"wj=knots" ,"tj=c" ,"waj=m" ,"tij=cm" ,"odh=0" ,"doh=24" ,"fhours=240" ,"hrsm=1" ,"vt=forecasts" ,"lng=en" ,"p=WINDSPD,GUST,MWINDSPD,SMER"];
+            var script = document.createElement("script");
+            var tag = document.getElementsByTagName("script")[0];
+            script.src = "https://www.windguru.cz/js/widget.php?"+(arg.join("&"));
+            tag.parentNode.insertBefore(script, tag);
+        };
+        window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+        })(window, document);
+        </script>
+    </div>
+  </div>
+    <a href="https://surfcenter.co.il/%D7%9E%D7%93-%D7%A8%D7%95%D7%97/">Eilat</a>
+
+    <script>
+    // Select all <a> elements
+    const links = document.querySelectorAll('a');
+
+    // Set target="_blank" for each
+    links.forEach(link => {
+        link.setAttribute('target', '_blank');
+    });
+    </script>
+</body>
+</html>
