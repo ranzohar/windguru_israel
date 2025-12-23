@@ -36,6 +36,31 @@
       margin-top: 40px;
     }
 
+    /* Video container with zoom on top-right */
+    .video-container {
+      width: 75%;
+      margin: 20px 0;
+      background: #000;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .video-zoom-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 75%; /* 4:3 aspect ratio */
+      overflow: hidden;
+    }
+
+    .video-zoom-wrapper iframe {
+      position: absolute;
+      top: -20%;
+      left: -50%;
+      width: 180%;
+      height: 180%;
+      border: none;
+    }
 
   </style>
 </head>
@@ -101,6 +126,17 @@
         window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
       })(window, document);
       </script>
+    </div>
+  </div>
+
+  <!-- Live video stream - zoomed on top-right portion -->
+  <div class="video-container">
+    <div class="video-zoom-wrapper">
+      <iframe
+        src="https://streaming.therdteam.com/live/play.html?id=10006"
+        allowfullscreen
+        title="Tel Aviv Live Stream">
+      </iframe>
     </div>
   </div>
 
